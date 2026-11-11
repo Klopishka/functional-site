@@ -1,0 +1,204 @@
+<!doctype html>
+<html lang="uk">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Інтерактивний навчальний сайт про функції та їх властивості">
+  <title>Функції та їх властивості — інтерактивний курс</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="#home" aria-label="На головну">
+        <span class="brand-mark">ƒ</span>
+        <span><strong>Функції</strong><small>навчальний курс</small></span>
+      </a>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="main-nav">☰</button>
+      <nav id="main-nav" class="main-nav" aria-label="Основна навігація">
+        <a class="nav-link active" href="#home">Головна</a>
+        <a class="nav-link" href="#theory">Теорія</a>
+        <a class="nav-link" href="#examples">Приклади</a>
+        <a class="nav-link" href="#practice">Практика</a>
+        <a class="nav-link" href="#applications">Застосування</a>
+        <a class="nav-link" href="#quiz">Тест</a>
+        <a class="nav-link nav-cta" href="#calculator">Калькулятор <span>↗</span></a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section id="home" class="hero page-section">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <div class="eyebrow"><span class="pulse-dot"></span> Інтерактивний мінікурс · 9 клас</div>
+          <h1>Функції та їх <em>властивості</em></h1>
+          <p class="hero-lead">Зрозумій, як змінюються величини, навчися читати графіки та застосовуй математику до реальних задач.</p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="#theory">Почати навчання <span>→</span></a>
+            <a class="button button-ghost" href="#calculator">Побудувати графік</a>
+          </div>
+          <div class="hero-stats">
+            <div><strong>07</strong><span>розділів</span></div>
+            <div><strong>05+</strong><span>прикладів</span></div>
+            <div><strong>∞</strong><span>цікавих графіків</span></div>
+          </div>
+        </div>
+        <div class="hero-visual" aria-label="Ілюстрація графіка функції">
+          <div class="floating-note note-top">y = f(x)</div>
+          <div class="graph-card">
+            <div class="graph-card-head"><span>Графік функції</span><span class="live-label"><i></i> live</span></div>
+            <svg viewBox="0 0 480 300" role="img" aria-label="Парабола на координатній площині">
+              <defs>
+                <pattern id="grid" width="32" height="32" patternUnits="userSpaceOnUse">
+                  <path d="M 32 0 L 0 0 0 32" fill="none" stroke="#d7e4f0" stroke-width="1"/>
+                </pattern>
+                <linearGradient id="curve" x1="0" x2="1">
+                  <stop offset="0" stop-color="#f27358"/>
+                  <stop offset="1" stop-color="#7758d9"/>
+                </linearGradient>
+              </defs>
+              <rect x="28" y="16" width="428" height="252" rx="14" fill="url(#grid)"/>
+              <line x1="52" y1="142" x2="438" y2="142" stroke="#7b8ea1" stroke-width="2"/>
+              <line x1="244" y1="30" x2="244" y2="254" stroke="#7b8ea1" stroke-width="2"/>
+              <path d="M66 54 C 135 206, 188 230, 244 230 C 300 230, 353 206, 422 54" fill="none" stroke="url(#curve)" stroke-width="7" stroke-linecap="round"/>
+              <circle cx="244" cy="230" r="8" fill="#fff" stroke="#f27358" stroke-width="5"/>
+              <text x="425" y="134" fill="#536679" font-size="15">x</text>
+              <text x="253" y="39" fill="#536679" font-size="15">y</text>
+              <text x="256" y="248" fill="#f27358" font-size="13">вершина</text>
+            </svg>
+            <div class="graph-card-foot"><span>Область визначення: <b>ℝ</b></span><span>Множина значень: <b>[0; +∞)</b></span></div>
+          </div>
+          <div class="floating-note note-bottom"><span>✦</span> думай графічно</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="roadmap-strip">
+      <div class="container roadmap">
+        <span class="roadmap-title">Твій маршрут</span>
+        <a href="#theory"><b>01</b> Зрозуміти</a><i>→</i>
+        <a href="#examples"><b>02</b> Розібрати</a><i>→</i>
+        <a href="#practice"><b>03</b> Перевірити</a><i>→</i>
+        <a href="#calculator"><b>04</b> Дослідити</a>
+      </div>
+    </section>
+
+    <section id="theory" class="page-section light-section">
+      <div class="container">
+        <div class="section-heading">
+          <div><div class="eyebrow coral">01 · База</div><h2>Теорія без зайвого</h2></div>
+          <p>Функція — це правило, яке кожному допустимому значенню <b>x</b> ставить у відповідність єдине значення <b>y</b>.</p>
+        </div>
+        <div class="definition-card">
+          <div class="definition-symbol">y = f(x)</div>
+          <div><strong>Запам’ятай головне</strong><p>Аргумент <b>x</b> — незалежна змінна, а <b>y</b> — залежна. Значення функції змінюється разом зі зміною аргументу.</p></div>
+          <div class="definition-arrow">x <span>→</span> y</div>
+        </div>
+        <div class="concept-grid">
+          <article class="concept-card"><span class="card-icon blue">◎</span><h3>Область визначення D(f)</h3><p>Усі значення <b>x</b>, для яких формула має зміст. Наприклад, у <span class="formula">√(x − 2)</span> маємо <b>x ≥ 2</b>.</p></article>
+          <article class="concept-card"><span class="card-icon coral">↕</span><h3>Область значень E(f)</h3><p>Усі значення <b>y</b>, яких набуває функція. Для <span class="formula">y = x²</span> це <b>y ≥ 0</b>.</p></article>
+          <article class="concept-card"><span class="card-icon violet">⌁</span><h3>Графік функції</h3><p>Множина точок <span class="formula">(x; f(x))</span> на координатній площині. Кожній вертикалі — не більше однієї точки.</p></article>
+        </div>
+        <div class="properties-layout">
+          <div>
+            <h3 class="subheading">Ключові властивості</h3>
+            <div class="property-list">
+              <div><span class="property-number">01</span><div><b>Нулі функції</b><p>Точки, де графік перетинає вісь Ox: <span class="formula">f(x) = 0</span>.</p></div></div>
+              <div><span class="property-number">02</span><div><b>Знак функції</b><p>Проміжки, де графік вище осі Ox — <b>f(x) &gt; 0</b>, а нижче — <b>f(x) &lt; 0</b>.</p></div></div>
+              <div><span class="property-number">03</span><div><b>Монотонність</b><p>Функція зростає, якщо зі збільшенням <b>x</b> збільшується <b>y</b>; спадає — якщо зменшується.</p></div></div>
+              <div><span class="property-number">04</span><div><b>Парність</b><p>Парна: <span class="formula">f(−x)=f(x)</span> — симетрія відносно Oy. Непарна: <span class="formula">f(−x)=−f(x)</span>.</p></div></div>
+            </div>
+          </div>
+          <div class="formula-board">
+            <div class="board-label">Основні формули</div>
+            <div class="formula-row"><span>Лінійна</span><b>y = kx + b</b></div>
+            <div class="formula-row"><span>Квадратична</span><b>y = ax² + bx + c</b></div>
+            <div class="formula-row"><span>Обернена пропорційність</span><b>y = k/x, k ≠ 0</b></div>
+            <div class="formula-row"><span>Модуль</span><b>y = |x|</b></div>
+            <div class="formula-tip">Порада: починай аналіз із області визначення та ключових точок.</div>
+          </div>
+        </div>
+        <div class="theorem-banner">
+          <span class="theorem-mark">∑</span><div><b>Теорема про нулі квадратного тричлена</b><p>Для <span class="formula">ax² + bx + c = 0</span> дискримінант <span class="formula">D = b² − 4ac</span> визначає кількість коренів: D &gt; 0 — два, D = 0 — один, D &lt; 0 — дійсних коренів немає.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="examples" class="page-section">
+      <div class="container">
+        <div class="section-heading"><div><div class="eyebrow violet">02 · Розбір</div><h2>Приклади крок за кроком</h2></div><p>Не просто дивись на відповідь — відстежуй логіку розв’язання.</p></div>
+        <div class="examples-grid">
+          <article class="example-card"><div class="example-top"><span class="example-tag">Приклад 01</span><span class="example-type">область визначення</span></div><h3>f(x) = √(3x − 6)</h3><div class="steps"><p><b>01</b> Підкореневий вираз не від’ємний: <span class="formula">3x − 6 ≥ 0</span>.</p><p><b>02</b> Переносимо: <span class="formula">3x ≥ 6 → x ≥ 2</span>.</p></div><div class="answer">Відповідь: <b>D(f) = [2; +∞)</b></div></article>
+          <article class="example-card featured-example"><div class="example-top"><span class="example-tag">Приклад 02</span><span class="example-type">вершина параболи</span></div><h3>f(x) = x² − 4x + 3</h3><div class="steps"><p><b>01</b> Виділяємо квадрат: <span class="formula">f(x) = (x − 2)² − 1</span>.</p><p><b>02</b> Вершина має координати <span class="formula">V(2; −1)</span>; вісь симетрії: <span class="formula">x = 2</span>.</p></div><div class="answer">Відповідь: мінімум <b>f(2) = −1</b></div></article>
+          <article class="example-card"><div class="example-top"><span class="example-tag">Приклад 03</span><span class="example-type">нуль функції</span></div><h3>f(x) = 2x − 8</h3><div class="steps"><p><b>01</b> Прирівнюємо до нуля: <span class="formula">2x − 8 = 0</span>.</p><p><b>02</b> Отримуємо <span class="formula">x = 4</span>. Графік перетинає Ox у точці <span class="formula">(4; 0)</span>.</p></div><div class="answer">Відповідь: нуль функції — <b>x₀ = 4</b></div></article>
+          <article class="example-card"><div class="example-top"><span class="example-tag">Приклад 04</span><span class="example-type">парність</span></div><h3>f(x) = x⁴ − 3x²</h3><div class="steps"><p><b>01</b> Замінимо <b>x</b> на <b>−x</b>: <span class="formula">f(−x) = (−x)⁴ − 3(−x)²</span>.</p><p><b>02</b> Спрощуємо: <span class="formula">f(−x) = x⁴ − 3x² = f(x)</span>.</p></div><div class="answer">Відповідь: функція <b>парна</b></div></article>
+          <article class="example-card"><div class="example-top"><span class="example-tag">Приклад 05</span><span class="example-type">практична задача</span></div><h3>Рух велосипедиста</h3><div class="steps"><p><b>01</b> Відстань задає формула <span class="formula">s(t) = 12t</span>, де 12 — швидкість (км/год).</p><p><b>02</b> За 2,5 години: <span class="formula">s(2,5) = 12 · 2,5 = 30</span>.</p></div><div class="answer">Відповідь: <b>30 км</b></div></article>
+          <article class="example-card mini-challenge"><span class="spark">✦</span><h3>Твоя черга</h3><p>Побудуй у калькуляторі <span class="formula">y = −0,5x + 3</span>. Де буде перетин з Oy?</p><a href="#calculator">Спробувати →</a></article>
+        </div>
+      </div>
+    </section>
+
+    <section id="practice" class="page-section light-section">
+      <div class="container">
+        <div class="section-heading"><div><div class="eyebrow coral">03 · Практика</div><h2>Перевір себе</h2></div><p>Розв’яжи самостійно, а потім відкрий підказку для перевірки.</p></div>
+        <div class="practice-list">
+          <details class="task-item" open><summary><span>01</span><b>Область визначення</b><em>f(x) = 1/(x − 5)</em><i>+</i></summary><div class="task-answer">Знаменник не може дорівнювати нулю: <b>x ≠ 5</b>. Отже, <b>D(f) = (−∞; 5) ∪ (5; +∞)</b>.</div></details>
+          <details class="task-item"><summary><span>02</span><b>Нулі функції</b><em>f(x) = x² − 9</em><i>+</i></summary><div class="task-answer">Розклад: <b>(x − 3)(x + 3) = 0</b>. Нулі: <b>x₁ = −3, x₂ = 3</b>.</div></details>
+          <details class="task-item"><summary><span>03</span><b>Дослідження знака</b><em>f(x) = −2x + 6</em><i>+</i></summary><div class="task-answer">Нуль у <b>x = 3</b>. Функція додатна на <b>(−∞; 3)</b> і від’ємна на <b>(3; +∞)</b>.</div></details>
+          <details class="task-item"><summary><span>04</span><b>Вершина параболи</b><em>f(x) = x² + 6x + 5</em><i>+</i></summary><div class="task-answer">Виділяємо квадрат: <b>(x + 3)² − 4</b>. Вершина: <b>V(−3; −4)</b>.</div></details>
+          <details class="task-item"><summary><span>05</span><b>Парність</b><em>f(x) = x³ + 2x</em><i>+</i></summary><div class="task-answer"><b>f(−x) = −x³ − 2x = −f(x)</b>, тому функція <b>непарна</b>.</div></details>
+          <details class="task-item"><summary><span>06</span><b>Значення функції</b><em>f(x) = 3x − 1, x = −2</em><i>+</i></summary><div class="task-answer"><b>f(−2) = 3 · (−2) − 1 = −7</b>.</div></details>
+        </div>
+      </div>
+    </section>
+
+    <section id="applications" class="page-section applications-section">
+      <div class="container">
+        <div class="section-heading light-heading"><div><div class="eyebrow mint">04 · Навіщо це?</div><h2>Функції навколо нас</h2></div><p>Математична модель допомагає бачити закономірності у світі.</p></div>
+        <div class="applications-grid">
+          <article><span class="app-icon">⌁</span><h3>Фізика</h3><p>Закон руху <b>s(t)</b>, залежність сили струму від напруги, траєкторія польоту — усе це функції.</p><span class="app-link">моделювання руху</span></article>
+          <article><span class="app-icon">⌁</span><h3>Економіка</h3><p>Попит залежить від ціни, прибуток — від кількості товару, а відсотки ростуть за експонентою.</p><span class="app-link">прогнозування</span></article>
+          <article><span class="app-icon">⌁</span><h3>Технології</h3><p>Графіки даних, анімації, обробка сигналів і машинне навчання працюють із функціональними залежностями.</p><span class="app-link">дані та алгоритми</span></article>
+          <article><span class="app-icon">⌁</span><h3>Природа</h3><p>Температура протягом дня, ріст рослини, чисельність популяції — змінні величини, які можна досліджувати.</p><span class="app-link">спостереження</span></article>
+        </div>
+      </div>
+    </section>
+
+    <section id="quiz" class="page-section">
+      <div class="container quiz-layout">
+        <div class="quiz-intro"><div class="eyebrow violet">05 · Фінальна перевірка</div><h2>Мінітест</h2><p>П’ять запитань, щоб закріпити основні поняття. Обирай один варіант відповіді.</p><div class="quiz-score"><span id="score-number">—</span><small>твій результат<br>після завершення</small></div></div>
+        <div class="quiz-box">
+          <div class="quiz-progress"><span id="quiz-progress-bar"></span></div>
+          <div id="quiz-content"></div>
+          <div class="quiz-controls"><button id="quiz-prev" class="button button-ghost" type="button">← Назад</button><button id="quiz-next" class="button button-primary" type="button">Далі →</button></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="calculator" class="page-section calculator-section">
+      <div class="container">
+        <div class="section-heading light-heading"><div><div class="eyebrow mint">06 · Експеримент</div><h2>Графічний калькулятор</h2></div><p>Змінюй параметри та спостерігай, як формула оживає на графіку.</p></div>
+        <div class="calculator-layout">
+          <div class="controls-panel">
+            <div class="control-title"><span class="control-dot"></span> Квадратична функція</div>
+            <div class="function-display">y = <output id="a-label">1</output>x² <output id="b-label">+0</output>x <output id="c-label">+0</output></div>
+            <label class="range-control"><span><b>Коефіцієнт a</b><output id="a-value">1.0</output></span><input id="a-range" type="range" min="-3" max="3" step="0.1" value="1"></label>
+            <label class="range-control"><span><b>Коефіцієнт b</b><output id="b-value">0.0</output></span><input id="b-range" type="range" min="-8" max="8" step="0.5" value="0"></label>
+            <label class="range-control"><span><b>Коефіцієнт c</b><output id="c-value">0.0</output></span><input id="c-range" type="range" min="-8" max="8" step="0.5" value="0"></label>
+            <div class="quick-presets"><span>Швидкі приклади</span><button type="button" data-values="1,0,0">x²</button><button type="button" data-values="1,-4,3">x²−4x+3</button><button type="button" data-values="-1,0,4">−x²+4</button></div>
+            <div id="calculator-insight" class="calculator-insight">Задай параметри та досліджуй графік.</div>
+          </div>
+          <div class="canvas-panel"><canvas id="function-canvas" width="760" height="460" aria-label="Графік квадратичної функції"></canvas><div class="canvas-legend"><span><i class="legend-line"></i> f(x)</span><span><i class="legend-dot"></i> вершина</span><span>Колесо миші — масштаб</span></div></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="final-callout">
+      <div class="container final-inner"><span class="final-symbol">ƒ</span><div><h2>Готовий бачити закономірності?</h2><p>Математика стає зрозумілою, коли ти можеш її досліджувати.</p></div><a href="#home" class="button button-primary">На початок ↑</a></div>
+    </section>
+  </main>
+  <footer class="site-footer"><div class="container footer-inner"><span>ФУНКЦІЇ <b>·</b> навчальний курс</span><span>Створено для допитливих дев’ятикласників · 2025</span></div></footer>
+  <script src="script.js"></script>
+</body>
+</html>
